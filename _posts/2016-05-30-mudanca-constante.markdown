@@ -19,9 +19,9 @@ Acabei de adicionar o [Disqus](https://disqus.com/home/) ao site.
 
 Até que foi bem fácil e eu achando que seria o "fim do mundo". #SuperRecomendo
 
-Também devo lembrar que instalei o tema [Jekyll-Mono](AkshayAgarwal007/Jekyll-Mono).
+Também devo lembrar que instalei o tema [Kasper](https://github.com/rosario/kasper).
 
-> Jekyll-Mono is a simple and elegant GitHub Profile cum Blog theme based on Barry Clark's Jekyll-Now
+> Ghost's default theme (Casper) on Jekyll
 
 Espero que com isso, tenhamos um bom feedback.
 
