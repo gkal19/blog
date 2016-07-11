@@ -15,6 +15,8 @@ Tudo beleuza creuza?
 
 Então, Eu iniciei uma série de posts aqui sobre o envio de Pull Requests separados e vamos continuar.
 
+[COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1](https://gkal19.github.io/2016/07/11/pull-request-separados-1.html)
+
 Anteriormente, aprendemos sobre branchs e como cria-las e acessa-las.
 
 Agora vamos continuar >>>. KATIAU
