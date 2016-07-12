@@ -51,6 +51,8 @@ O próximo passo será adicionar o seu exercício, como irei enviar o exercício
 Criei a pasta `class-10` e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.
 > Essa é a nova "norma" para enviar exercícios no BeMEAN, creio eu que será assim a partir do módulo de Angular1.
 
-Então, vamos terminar o post por aqui, brevemente farei a segunda parte desse post. É só...
+Então, vamos terminar o post por aqui.
+
+[COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2](https://gkal19.github.io/2016/07/11/pull-request-separados-2.html)
 
 Abração =D
