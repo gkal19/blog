@@ -1,13 +1,13 @@
 ---
 layout: post
-title: USANDO KALI EM PENDRIVE
+title: USANDO KALI NO PENDRIVE
 author: Gabriel Kalani
 ---
 
-Já pensou em usar o Kali Linux em um pen-drive?
+Pois é, vou ensinar aos interessados como instalar o Kali Linux em um Pendrive
 Então, "simbora"!!
 
-## USANDO KALI EM PENDRIVE
+## USANDO KALI NO PENDRIVE
 -----
 
 Olá terráqueos,
