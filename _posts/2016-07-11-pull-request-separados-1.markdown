@@ -53,6 +53,6 @@ Criei a pasta `class-10` e nela criei mais uma pasta com meu username e os arqui
 
 Então, vamos terminar o post por aqui.
 
-[COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2](https://gkal19.github.io/2016/07/11/pull-request-separados-2.html)
+[COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2](https://gkal19.github.io/blog2016/07/11/pull-request-separados-2.html)
 
 Abração =D
