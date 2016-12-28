@@ -1,2 +1,2 @@
-# gkal19.github.io/blog/
+# gkal19.github.io//
 Blog made w/ Jekyll

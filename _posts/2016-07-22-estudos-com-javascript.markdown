@@ -13,7 +13,7 @@ Então, "simbora"!!
 Olá terráqueos,
 Tudo beleuza creuza?
 
-Então, faz muito tempo que não posto nada aqui no blog desde o post em que eu ensinava [COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1](https://gkal19.github.io/blog2016/07/11/pull-request-separados-1.html) e também [COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2](https://gkal19.github.io/blog2016/07/11/pull-request-separados-2.html)
+Então, faz muito tempo que não posto nada aqui no blog desde o post em que eu ensinava [COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1](https://gkal19.github.io/2016/07/11/pull-request-separados-1.html) e também [COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2](https://gkal19.github.io/2016/07/11/pull-request-separados-2.html)
 
 **Merchan bonito**
 
