@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KALI LINUX: Persistence em USB
+title: KALI LINUX: PERSISTENCE COM USB
 author: Gabriel Kalani
 ---
 
-Já pensou em aprender a usar o Kali Linux em um pen-drive?
+Já pensou em usar o Kali Linux em um pen-drive?
 Então, "simbora"!!
 
-## KALI LINUX: PERSISTENCE EM USB
+## KALI LINUX: PERSISTENCE COM USB
 -----
 
 Olá terráqueos,
