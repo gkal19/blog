@@ -1,5 +1,5 @@
 name: Gabriel Kalani
-description: pensei que eu era o homem-aranha
+description: pensei que eu era o homem-aranha {% include share.html %}
 meta_description: "Blog de um adolescente, meio louco gkal19"
 
 markdown: kramdown
@@ -7,7 +7,7 @@ highlighter: pygments
 logo: true
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://gkal19.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
