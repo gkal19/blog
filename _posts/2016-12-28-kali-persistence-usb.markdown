@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KALI LINUX: PERSISTENCE COM USB
+title: USANDO KALI EM PENDRIVE
 author: Gabriel Kalani
 ---
 
 Já pensou em usar o Kali Linux em um pen-drive?
 Então, "simbora"!!
 
-## KALI LINUX: PERSISTENCE COM USB
+## USANDO KALI EM PENDRIVE
 -----
 
 Olá terráqueos,
