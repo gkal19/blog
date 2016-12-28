@@ -8,7 +8,7 @@ logo: true
 paginate: 15
 baseurl: /
 domain_name: 'http://gkal19.github.io/'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-30503770-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
