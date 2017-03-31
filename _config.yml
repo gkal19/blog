@@ -12,8 +12,6 @@ google_analytics: 'UA-30503770-1'
 gems:
   - jemoji
   - jekyll-paginate
-  - jekyll-twitter-plugin
-  - tweet
 
 url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
