@@ -25,8 +25,7 @@ O webpack é como um `module loader` ou seja, um empacotador de módulos assim c
 
 ![Também não sei](http://geradormemes.com/media/created/ipcsc2.jpg)
 
-Podemos instalar ele a partir do [NPM](https://www.npmjs.com/)
-Há duas maneiras
+Podemos instalar ele a partir do [NPM](https://www.npmjs.com/) de duas maneiras:
 
 - Instalar ele globalmente
 >
