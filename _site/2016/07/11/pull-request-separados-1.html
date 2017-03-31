@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Gabriel Kalani - Eu sou Gabriel Kalani, o Batman</title>
+    <meta name="description" content="Eu sou Gabriel Kalani, o Batman" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">FEED</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-07-11">11 Jul 2016</time>
+                
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="http://localhost:4000">
+                
+                    <span class="blog-title">Gabriel Kalani</span>
+                
+            </a>
+        </header> -->
+
+        <span class="post-meta">
+            <time datetime="2016-07-11">11 Jul 2016</time>
+            
+        </span>
+
+        <!-- <h1 class="post-title">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1</h1> -->
+
+        <section class="post-content">
+            <p>Já pensou em aprender a criar Pull Request’s separados?
+Então, “simbora”!!</p>
+
+<h2 id="como-criar-pull-requests-separados---parte-1">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1</h2>
+<hr />
+
+<p>Olá terráqueos,
+Tudo beleuza creuza?</p>
+
+<p>Pô, então… O Tio Suissa me pediu para dar uma aula para a galera do BeMEAN ensinando o envio dos seus RESPECTIVOS exercícios de devidos Módulos em que se encontram seus alunos.
+<strong>Falei pouco mais falei bonito</strong>
+Bem, nós, alunos enviamos nossos exercícios por meio de Pull Requests, mas se você for criar 1 PR, ele vai criar normalmente, porém, digamos que queiras enviar o exercício de outra aula e for criar um PR, ele vai juntar tudo em um e vai ficar muito bagunçado.
+Por meio de pesquisas, eu aprendi a envia-los por meio de Branchs.</p>
+
+<blockquote>
+  <p>O que é uma <strong>Branch</strong></p>
+</blockquote>
+
+<p>Um branch no Git é simplesmente um leve ponteiro móvel para um desses commits. 
+O nome do branch padrão no Git é master. Como você inicialmente fez commits, você tem um branch principal ( master branch ) que aponta para o último commit que você fez. 
+Cada vez que você faz um commit ele avança automaticamente.</p>
+
+<p><img src="https://git-scm.com/figures/18333fig0303-tn.png" alt="branch" /></p>
+
+<p>Acho que você já deve ter tido uma noção do que é uma <strong>branch</strong></p>
+
+<p>Enfim, vamos lá!
+Suponhamos que você deseja enviar o exercício #10 do módulo de Angular1.
+Para criar uma <strong>branch</strong> utilizamos o comando:</p>
+<pre><code class="language-shell">$ git branch [insira o nome da branch]
+</code></pre>
+
+<blockquote>
+  <p>A parte onde está escrita “[insira o nome da branch]” deve ser substituída por <code>patch-[número da aula de seu modulo]</code> e não deve conter chaves ou espaços.</p>
+</blockquote>
+
+<p>Ao checar o terminal, poderá ver que ele estará na branch principal <code>master</code>, mas para fazer o trocar de branchs, utilizamos:</p>
+
+<pre><code class="language-shell">$ git branch [nome da sua branch]
+</code></pre>
+
+<p>E quando você for ver, ele já terá feito a “transação” para o outro Ramo.</p>
+
+<p><img src="http://i.imgur.com/oKjBTvM.png" alt="trocando a branch" /></p>
+
+<p>O próximo passo será adicionar o seu exercício, como irei enviar o exercício #10 de Angular, terei eu de adicionar a class-10 – já que eu sou o único que está na frente em exercícios de Angular.
+Criei a pasta <code>class-10</code> e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.</p>
+<blockquote>
+  <p>Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será assim a partir do módulo de Angular1.</p>
+</blockquote>
+
+<p>Então, vamos terminar o post por aqui.</p>
+
+<p><a href="https://gkal19.github.io/2016/07/11/pull-request-separados-2.html">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2</a></p>
+
+<p>Abração =D</p>
+
+        </section>
+
+        
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            
+                <figure class="author-image">
+                    <!--<a class="img" href="/" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">-->
+                    <a class="img" href="/" style="background-image: url(//assets/images/profile.jpg)">
+                    <span class="hidden">Gabriel Kalani's Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> Gabriel Kalani </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        h3ll0 fr13nd!
+                    </p>
+                </section>
+            
+
+            <!-- Share links section -->
+            <section class="share">
+    <h4>Compartilhe, por favor!!</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1&amp;url=http://gkal19.github.io//2016/07/11/pull-request-separados-1.html"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gkal19.github.io//2016/07/11/pull-request-separados-1.html"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gkal19.github.io//2016/07/11/pull-request-separados-1.html"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+
+
+            <!-- Disqus comments -->
+            
+
+        </footer>
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Gabriel Kalani</a> &copy; 
+               &bull; Todos os direitos reservados.
+      </section>
+      <section class="poweredby">Feito com Jekyll usando 
+        <a href="http://github.com/rosario/kasper">Kasper</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- Google Analytics Tracking code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30503770-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
+</body>
+</html>
