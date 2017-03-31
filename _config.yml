@@ -4,7 +4,7 @@ meta_description: "Eu sou Gabriel Kalani, o Batman"
 
 markdown: kramdown
 highlighter: pygments
-logo: true
+logo: false
 paginate: 15
 baseurl: ''
 domain_name: 'http://gkal19.github.io/'
@@ -15,13 +15,9 @@ gems:
   - jekyll-twitter-plugin
   - tweet
 
-# Details for the RSS feed generator
-url:            'blog url'
+url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
-author-image: '/assets/images/profile.jpg'
-author-image-alt: 'Author's Picture'
 
-# Social Media
 facebook: gkal19
 twitter: gkal19
 linkedin: gkal19
