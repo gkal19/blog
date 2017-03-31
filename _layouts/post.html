@@ -1,6 +1,7 @@
 ---
 layout: default
 disqus: true
+comments: true
 archive: false
 post_class: post-template
 ---
@@ -64,7 +65,7 @@ post_class: post-template
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(http://gabrielkalani.com.br/img/team/1.jpg)">
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
@@ -74,15 +75,36 @@ post_class: post-template
                     <p>
                         Olá humano!
                     </p>
-                    <iframe src="http://tylerlh.github.com/github-latest-commits-widget/?username=gkal19&repo=gkal19.github.io&limit=7"
-  allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="252px"></iframe>
                 </section>
             {% endif %}
 
             <!-- Share links section -->
             {% include share.html %}
             
-            <script id="dsq-count-scr" src="//gabrielkalaniblog2.disqus.com/count.js" async></script>
+            % if page.comments %}
+                <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://gabriel-kalani-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            {% endif %}
+
+            <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
             
             <!-- Disqus comments -->
             {% if page.disqus %}
