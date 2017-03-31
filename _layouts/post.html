@@ -1,9 +1,7 @@
 ---
 layout: default
 disqus: true
-comments: true
-archive: true
-twitter: true
+archive: false
 post_class: post-template
 ---
 
@@ -53,7 +51,7 @@ post_class: post-template
 
         {% if page.archive %}
         <section class="archive">
-            <h5>Arquivos</h5>
+            <h5>Archive</h5>
             <ul>
                 {% for post in site.posts %}
                     <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -77,31 +75,11 @@ post_class: post-template
                         h3ll0 fr13nd!
                     </p>
                 </section>
-
-                
-
-                {% if page.comments %}
-                    <section class="disqus">
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                            var disqus_shortname = 'gabriel-kalani-blog'; 
-                            var disqus_developer = 0; // developer mode is on
-                            (function() {
-                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                            })();
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                    </section>
             {% endif %}
 
             <!-- Share links section -->
             {% include share.html %}
 
-            <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
-            
             <!-- Disqus comments -->
             {% if page.disqus %}
                 {% include disqus.html %}
