@@ -12,6 +12,7 @@ google_analytics: 'UA-30503770-1'
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-twitter-plugin
 
 # Details for the RSS feed generator
 url:            'blog url'
