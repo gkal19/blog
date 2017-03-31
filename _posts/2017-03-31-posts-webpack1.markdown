@@ -1,12 +1,12 @@
 ---
 layout: post
-title: UM POUCO SOBRE WEBPACK
+title: UM POUCO SOBRE WEBPACK - PARTE 1/?
 author: Gabriel Kalani
 ---
 
 É de comer?
 
-## UM POUCO SOBRE WEBPACK
+## UM POUCO SOBRE WEBPACK - PARTE 1/?
 -----
 
 Opaaaa, E aí? como você estão?
