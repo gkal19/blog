@@ -76,11 +76,9 @@ post_class: post-template
                     <p>
                         h3ll0 fr13nd!
                     </p>
-                    <!-- Tweets -->
-                    {% plugin_type twitter_url *options %}
-
-                    {% twitter https://twitter.com/jekyllrb maxwidth=500 limit=5 %}
                 </section>
+
+                {% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
 
                 {% if page.comments %}
                     <section class="disqus">
