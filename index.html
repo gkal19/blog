@@ -20,6 +20,7 @@ about: 'about.html'
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Sobre mim </a> {% endif %}
+                {% include follow.html %}
              </h2>
         </div>
     </div>
