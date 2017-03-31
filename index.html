@@ -17,7 +17,7 @@ about: 'about.html'
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
+            <h2 class="page-description" align="center">
                 {% if site.description %} {{ site.description }}. {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Sobre mim </a> {% endif %}
                 {% include follow.html %}
