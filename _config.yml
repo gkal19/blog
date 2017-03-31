@@ -18,3 +18,11 @@ gems:
 # Details for the RSS feed generator
 url:            'blog url'
 author:         'Gabriel Kalani'
+author-image: '/assets/images/profile.jpg'
+author-image-alt: 'Author's Picture'
+
+# Social Media
+facebook: gkal19
+twitter: gkal19
+linkedin: gkal19
+github: gkal19
