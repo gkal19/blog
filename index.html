@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-cover: false
+cover: true
 about: 'about.html'
 ---
 
@@ -17,10 +17,9 @@ about: 'about.html'
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description" align="center">
+            <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Sobre mim </a> {% endif %}
-                {% include follow.html %}
              </h2>
         </div>
     </div>
