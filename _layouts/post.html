@@ -76,9 +76,10 @@ post_class: post-template
                     <p>
                         h3ll0 fr13nd!
                     </p>
-                    <div class='jekyll-twitter-plugin'> 
-                        {% twitter https://twitter.com/rubygems/status/518821243320287232 %}
-                    </div>
+                    <!-- Tweets -->
+                    {% plugin_type twitter_url *options %}
+
+                    {% twitter https://twitter.com/jekyllrb maxwidth=500 limit=5 %}
                 </section>
 
                 {% if page.comments %}
