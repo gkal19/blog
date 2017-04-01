@@ -68,15 +68,16 @@ post_class: post-template
                 <figure class="author-image">
                     <!--<a class="img" href="{{ site.baseurl }}" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">-->
                     <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.baseurl }}/assets/images/profile.jpg)">
-                    <span class="hidden">{{ site.author }}'s Picture</span></a>
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
-                <section class="author">  
-
-                <!--<a class="twitter-timeline" align="center" width="290" href="https://twitter.com/gkal19" data-tweet-limit="1" data-widget-id="606586076518600705">Tweets de @gkal19</a>-->
-
-                    <!--{% tweet https://twitter.com/gkal19/status/848217791559868416 align='right' width='350' %}-->
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> {{ site.author }} </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        Veja meu twitter recente abaixo!
+                    </p>
                 </section>
-
             {% endif %}
 
             <!-- Share links section -->
