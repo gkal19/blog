@@ -13,7 +13,6 @@ gems:
   - jemoji
   - jekyll-paginate
   - jekyll-twitter-plugin
-  - jekyll-tweet-tag
 
 url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
