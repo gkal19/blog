@@ -5,6 +5,8 @@ archive: false
 post_class: post-template
 ---
 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="http://platform.twitter.com/widgets.js"></script>
 <header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover | prepend: site.baseurl }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
         <a class="back-button icon-arrow-left" href="/">Home</a>
@@ -65,17 +67,16 @@ post_class: post-template
             {% if site.author %}
                 <figure class="author-image">
                     <!--<a class="img" href="{{ site.baseurl }}" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">-->
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.baseurl }}/assets/images/profile.jpg)">
-                    <span class="hidden">{{site.author}}'s Picture</span></a>
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.baseurl }}assets/images/profile.jpg)">
+                    <span class="hidden">{{ site.author }}'s Picture</span></a>
                 </figure>
-                <section class="author">
-                    <h4> {{ site.author }} </h4>
-                    <p>
-                        Veja meu twitter recente abaixo!
-                    </p>
+                <section class="author">  
+                <a class="twitter-timeline" align="center" width="300" href="https://twitter.com/gkal19" data-tweet-limit="1" data-widget-id="606586076518600705">Tweets de @gkal19</a>
                 
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
                     <!--{% tweet https://twitter.com/gkal19/status/848217791559868416 align='right' width='350' %}-->
                 </section>
+
             {% endif %}
 
             <!-- Share links section -->
