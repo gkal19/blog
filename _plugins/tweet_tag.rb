@@ -16,7 +16,7 @@ require 'json'
 module Jekyll
   class TweetTag < Liquid::Tag
 
-    TWITTER_OEMBED_URL = "https://api.twitter.com/1/statuses/oembed.json"
+    TWITTER_OEMBED_URL = "https://api.twitter.com/1/status/oembed.json"
 
     def initialize(tag_name, text, tokens)
       super

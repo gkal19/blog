@@ -13,11 +13,11 @@ gems:
   - jemoji
   - jekyll-paginate
   - jekyll-twitter-plugin
+  - jekyll-tweet-tag
 
 url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
 author-image: '/assets/images/profile.jpg'
-author-image-alt: 'Author's Picture'
 
 facebook: gkal19
 twitter: gkal19
