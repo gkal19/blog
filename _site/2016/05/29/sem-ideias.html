@@ -26,7 +26,7 @@
 <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
         <a class="back-button icon-arrow-left" href="/">Home</a>
-        <a class="subscribe-button icon-feed" href="/feed.xml">FEED</a>
+        <a class="subscribe-button icon-feed" href="feed.xml">FEED</a>
     </nav>
 </header>
 
@@ -99,17 +99,21 @@ Abração =D</p>
             <!-- If we want to display author's name and bio -->
             
                 <figure class="author-image">
-                    <!--<a class="img" href="/" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">-->
-                    <a class="img" href="/" style="background-image: url(/assets/images/profile.jpg)">
+                    <!--<a class="img" href="" style="background-image: url(https://avatars0.githubusercontent.com/u/11067705?v=3&s=460)">-->
+                    <a class="img" href="" style="background-image: url(/assets/images/profile.jpg)">
                     <span class="hidden">Gabriel Kalani's Picture</span></a>
                 </figure>
-                <section class="author">  
-                <a class="twitter-timeline" align="center" width="300" href="https://twitter.com/gkal19" data-tweet-limit="1" data-widget-id="606586076518600705">Tweets de @gkal19</a>
-                
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-                    <!--<div class='embed tweet'>Tweet could not be processed</div>-->
-                </section>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> Gabriel Kalani </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        Oi, tudo bem?
+                    </p>
 
+                    <br>
+                    <br>
+                </section>
             
 
             <!-- Share links section -->
@@ -127,6 +131,17 @@ Abração =D</p>
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <span class="hidden">Google+</span>
     </a>
+
+        <h4>Me siga</h4>
+    <a class="icon-twitter" href="http://twitter.com/gkal19" target="_blank">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="http://facebook.com/gkal19" target="_blank">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="fa fa-github" href="http://github.com/gkal19" width="20" height="20" target="_blank">
+        <span class="hidden">GitHub</span>
+    </a>
 </section>
 
 
@@ -141,7 +156,7 @@ Abração =D</p>
 
     <footer class="site-footer clearfix">
       <section class="copyright">
-        <a href="/">Gabriel Kalani</a> &copy; 
+        <a href="">Gabriel Kalani</a> &copy; 
               2017 &bull; Todos os direitos reservados.
       </section>
       <section class="poweredby">Feito com Jekyll usando 
@@ -152,8 +167,9 @@ Abração =D</p>
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script async src="http://platform.twitter.com/widgets.js"></script>
+    
+    <!-- Twitter Widget -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 
     <!-- Google Analytics Tracking code -->
     <script type="text/javascript">

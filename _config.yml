@@ -12,7 +12,9 @@ google_analytics: 'UA-30503770-1'
 gems:
   - jemoji
   - jekyll-paginate
-  - jekyll-twitter-plugin
+  - jekyll-admin
+group: 
+  - jekyll_plugins
 
 url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
