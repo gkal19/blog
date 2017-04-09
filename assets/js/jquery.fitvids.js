@@ -19,7 +19,7 @@
     };
 
     if(!document.getElementById('fit-vids-style')) {
-      // appendStyles: https://github.com/toddmotto/fluidvids/blob/master/dist/fluidvids.js
+      // Anexar estilos: https://github.com/toddmotto/fluidvids/blob/master/dist/fluidvids.js
       var head = document.head || document.getElementsByTagName('head')[0];
       var css = '.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}';
       var div = document.createElement('div');
@@ -46,7 +46,7 @@
       }
 
       var $allVideos = $(this).find(selectors.join(','));
-      $allVideos = $allVideos.not("object object"); // SwfObj conflict patch
+      $allVideos = $allVideos.not("object object"); // Patch de conflito SwfObj
 
       $allVideos.each(function(){
         var $this = $(this);
@@ -63,5 +63,5 @@
       });
     });
   };
-// Works with either jQuery or Zepto
+// Funciona com outros jQuery ou Zepto
 })( window.jQuery || window.Zepto );

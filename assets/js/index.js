@@ -1,14 +1,14 @@
 /**
- * Main JS file for Casper behaviours
+ * Arquivo JS principal para comportamentos Casper
  */
 
-/* globals jQuery, document */
+/* Globais jQuery, documento */
 (function ($, sr, undefined) {
     "use strict";
 
     var $document = $(document),
 
-        // debouncing function from John Hann
+        // Função de debouncing de John Hann
         // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
         debounce = function (func, threshold, execAsap) {
             var timeout;
@@ -39,8 +39,8 @@
 
         function updateImageWidth() {
             var $this = $(this),
-                contentWidth = $postContent.outerWidth(), // Width of the content
-                imageWidth = this.naturalWidth; // Original image resolution
+                contentWidth = $postContent.outerWidth(), // Largura do conteúdo
+                imageWidth = this.naturalWidth; // Resolução da imagem original
 
             if (imageWidth >= contentWidth) {
                 $this.addClass('full-img');
@@ -61,10 +61,10 @@
 
     });
 
-    // smartresize
+    // Redimensionamento inteligente
     jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
-    // Arctic Scroll by Paul Adam Davis
+    // Arctic Scroll por Paul Adam Davis
     // https://github.com/PaulAdamDavis/Arctic-Scroll
     $.fn.arctic_scroll = function (options) {
 

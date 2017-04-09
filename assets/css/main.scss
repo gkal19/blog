@@ -1,56 +1,44 @@
----
-# Let's add a comment to make this file sass-y.
-# Change this file for any custom CSS.
+--- 
+# Vamos adicionar um comentário para fazer este arquivo sass-y.
+ # Altere este arquivo para qualquer CSS personalizado. ---
+/* Precisamos adicionar display: inline para alinhar o '>>' do link 'leia mais' */
 ---
 
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
-	display:inline;
+    display: inline;
 }
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"syntax"
-;
-
+//Importe partials de `sass_dir` (padrão para` _sass`)
+@import "syntax";
 .follow a {
-	display:block;
-	height:36px;
-	width:36px;
-	text-align:center;
-	line-height:38px;
-	float:left;
-	color:#fff;
-	border-radius:50%;
-	padding: 5px;
-	margin: 5px;
+    display: block;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
 }
-
 .follow a.facebook_follow {
-	background-color: #5676A4;
+    background-color: #5676A4;
 }
-
 .follow a.twitter_follow {
-	background-color: #53B6D8;
+    background-color: #53B6D8;
 }
-
 .follow a.linkedin_follow {
-	background-color: #65A9D0;
+    background-color: #65A9D0;
 }
-
 .follow a.google_follow {
-	background-color: #3682C3;
+    background-color: #3682C3;
 }
-
 .follow a.rss_follow {
-	background-color: #E99C60;
+    background-color: #E99C60;
 }
-
-
 .follow a.github_follow {
-	background-color: #000;
+    background-color: #000;
 }
-
 .follow a:hover {
     color: #50585D;
 }

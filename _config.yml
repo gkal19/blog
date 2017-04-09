@@ -1,25 +1,36 @@
+# Título do Blog
 name: Gabriel Kalani
+# Descrição do Blog
 description: Eu sou Gabriel Kalani, o Batman 
+# Meta-descrição do Blog
 meta_description: "Eu sou Gabriel Kalani, o Batman"
-
+# Biblioteca para análise e conversão de um super conjunto de Markdown.
 markdown: kramdown
+# Highlighter Rouge
+# pygments não é mais suportado no Github
 highlighter: rouge
+# Logo? True ou False?
 logo: true
+# Número de Páginas
 paginate: 15
+# Base URL do site
+# Deixa do jeito que está
 baseurl: ''
 domain_name: 'http://gkal19.github.io/'
+# Código do Google Analytics
 google_analytics: 'UA-30503770-1'
+# Gems que o blog necessita
 gems:
   - jemoji
   - jekyll-paginate
   - jekyll-admin
 group: 
   - jekyll_plugins
-
+# Configuração da Bio do Autor
 url:            'http://gkal19.github.io/'
 author:         'Gabriel Kalani'
 author-image: '/assets/images/profile.jpg'
-
+# Mídias Sociais do Autor
 facebook: gkal19
 twitter: gkal19
 linkedin: gkal19

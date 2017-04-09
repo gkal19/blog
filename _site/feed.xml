@@ -5,16 +5,137 @@
     <description>Eu sou Gabriel Kalani, o Batman</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Apr 2017 15:53:47 -0300</pubDate>
-    <lastBuildDate>Sat, 08 Apr 2017 15:53:47 -0300</lastBuildDate>
+    <pubDate>Sun, 09 Apr 2017 12:35:19 -0300</pubDate>
+    <lastBuildDate>Sun, 09 Apr 2017 12:35:19 -0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>UM POUCO SOBRE REDUCE</title>
+        <description>&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt; assim como o &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt; é uma função super-importante para a Programação Funcional em JavaScript. Ele pode ser usado para encontrar um valor cumulativo ou concatenado com base em elementos de todo o &lt;code class=&quot;highlighter-rouge&quot;&gt;array&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Olá terráqueos,
+Tudo beleuza creuza?&lt;/p&gt;
+
+&lt;p&gt;Agora são 03:00, e eu já vou dormir, mas antes resolvi criar uma postagem falando sobre o &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hoje eu vim falar sobre o &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce()&lt;/code&gt; que aprendemos sobre ele em Programação Funcional em JavaScript assim como o &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt; e o &lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt;. Ele pode ser usado para encontrar um valor cumulativo ou concatenado com base em elementos de todo o &lt;code class=&quot;highlighter-rouge&quot;&gt;array&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Reduce é uma função incrível! Esse método realiza um callback! Sua função? Reduzir um array à um único valor! Como faz isso? Aplica um callback para um acumulador a partir de cada valor em um array. O Reduce faz isso da Esquerda &amp;gt; Direita, o ReduceRight faz a mesma coisa porem da Direita &amp;gt; Esquerda. Ja que esse é um pouco mais complicado. &lt;a href=&quot;https://github.com/Webschool-io/workshop-js-funcional-free#reduce--reduceright&quot;&gt;Por: Suissa&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No exemplo abaixo temos um código que faz a &lt;code class=&quot;highlighter-rouge&quot;&gt;soma&lt;/code&gt; da idade de Físicos Importantes na História.&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;physicists&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Albert Einstein'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;76&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Isaac Newton'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;84&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Galileu Galilei'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;77&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Stephen Hawking'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Nikola Tesla'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;86&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//    { name:'Gabriel Kalani', age:15 },&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Erwin Schrödinger'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;73&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/*const sum = physicists.reduce( function( prevVal, elem ) {
+    return prevVal + elem.age;
+}, 0 );*/&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sumAge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;physicists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prevVal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;elem&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prevVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;O valor é:&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sumAge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 471&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce&lt;/code&gt;, como eu disse, com base de elementos de todo o &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt; (da esquerda para direita), deve reduzí-lo a um único valor.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Como assim?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;O valor retornado é o valor acumulado passado de &lt;code class=&quot;highlighter-rouge&quot;&gt;callback&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;callback&lt;/code&gt; aí depois de todos os elementos terem sido alcançados, o &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce()&lt;/code&gt; vai retornar o valor acumulado/concatenado.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prevVal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialValue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Argumentos&lt;/th&gt;
+      &lt;th&gt;Função&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;prevVal&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Valor cumulado retornado em cada iteração.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;initialValue&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Objeto usado como primeiro argumento na primeira iteração.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;elem&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Valor do elemento.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;array&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Array ao qual a função &lt;code class=&quot;highlighter-rouge&quot;&gt;reduce()&lt;/code&gt; foi executada.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;O índice do elemento que está sendo processado no &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Callback é uma função que é usada como “callback”. Ela é tipicamente passada como argumento de outra função e/ou chamada quando um evento for acontecido, ou quando uma parte de código receber uma resposta de que estava à espera.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Assim, como podemos fazer a Soma dos valores dentro de um Array, podemos também Multiplicar, Dividir e Subtrair todos eles.&lt;/p&gt;
+
+&lt;p&gt;No exemplo abaixo vamos concatenar os valores de &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reduzir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduzir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [ 1, 9, 5, 6 ]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Resumidamente, o conceito de Concatenar seria colocar em ordem, prender ou encadear.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para terminar, podemos também usar o &lt;code class=&quot;highlighter-rouge&quot;&gt;reduceRight()&lt;/code&gt; que faz o mesmo porém da Direita para a Esquerda.&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reduzir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduceRight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;previousValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;previousValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduzir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 15&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Summary&quot;&gt;Array.prototype.reduce()&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Webschool-io/workshop-js-funcional-free&quot;&gt;Workshop JS Funcional&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Abração :smile:&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Apr 2017 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2017/04/09/um-pouco-sobre-reduce.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/09/um-pouco-sobre-reduce.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>UM POUCO SOBRE WEBPACK - PARTE 1/?</title>
         <description>&lt;p&gt;É de comer?&lt;/p&gt;
-
-&lt;h2 id=&quot;um-pouco-sobre-webpack---parte-1&quot;&gt;UM POUCO SOBRE WEBPACK - PARTE 1/?&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;Opaaaa, E aí? como você estão?
 Faz muito tempo que não posto nada aqui, mas eu ví que quase ninguém olha meus posts :broken_heart: 
@@ -28,7 +149,7 @@ Mas eu posto assim do mesmo jeito :kissing_heart:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.ytimg.com/vi/PeuTwM8MH50/hqdefault.jpg&quot; alt=&quot;Não sei&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;O webpack é como um &lt;code&gt;module loader&lt;/code&gt; ou seja, um empacotador de módulos assim como o &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;O webpack é como um &lt;code class=&quot;highlighter-rouge&quot;&gt;module loader&lt;/code&gt; ou seja, um empacotador de módulos assim como o &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;E como eu posso instalar o webpack?&lt;/p&gt;
@@ -42,15 +163,17 @@ Mas eu posto assim do mesmo jeito :kissing_heart:&lt;/p&gt;
   &lt;li&gt;Instalar ele globalmente
     &lt;blockquote&gt;
 
-      &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;npm install webpack -g
+      &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install webpack -g
 &lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;Instalar ele em um projeto
     &lt;blockquote&gt;
 
-      &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;npm install webpack --save-dev
+      &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install webpack --save-dev
 &lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -70,9 +193,6 @@ Mas eu posto assim do mesmo jeito :kissing_heart:&lt;/p&gt;
         <title>USANDO KALI NO PENDRIVE</title>
         <description>&lt;p&gt;Pois é, vou ensinar aos interessados como instalar o Kali Linux em um Pendrive
 Então, “simbora”!!&lt;/p&gt;
-
-&lt;h2 id=&quot;usando-kali-no-pendrive&quot;&gt;USANDO KALI NO PENDRIVE&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;Olá terráqueos,
 Tudo beleuza creuza?&lt;/p&gt;
@@ -266,9 +386,6 @@ preciso usar o TAB e digitar Persistence.&lt;/p&gt;
         <description>&lt;p&gt;Pois é, pelo título que já devem ter visto, eu decidi me abrir (tafuck mano) com vocês e contar para vocês como foi entrar para o “mundo” do JavaScript.
 Então, “simbora”!!&lt;/p&gt;
 
-&lt;h2 id=&quot;estudos-com-javascript&quot;&gt;ESTUDOS COM JAVASCRIPT&lt;/h2&gt;
-&lt;hr /&gt;
-
 &lt;p&gt;Olá terráqueos,
 Tudo beleuza creuza?&lt;/p&gt;
 
@@ -336,9 +453,6 @@ Recomendo os canais ou cursos de todos citados acima, todos me ajudaram demais n
         <description>&lt;p&gt;Já pensou em aprender a criar Pull Request’s separados?
 Então, “simbora”!!&lt;/p&gt;
 
-&lt;h2 id=&quot;como-criar-pull-requests-separados---parte-2&quot;&gt;COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2&lt;/h2&gt;
-&lt;hr /&gt;
-
 &lt;p&gt;Olá terráqueos,
 Tudo beleuza creuza?&lt;/p&gt;
 
@@ -354,23 +468,24 @@ Tudo beleuza creuza?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oKjBTvM.png&quot; alt=&quot;trocando a branch&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;No meu caso eu criei &lt;code&gt;patch-10&lt;/code&gt; que é a em que exercício eu estou e devemos adicionar o a pasta com seu username e os arquivos do exercício dentro.
+&lt;p&gt;No meu caso eu criei &lt;code class=&quot;highlighter-rouge&quot;&gt;patch-10&lt;/code&gt; que é a em que exercício eu estou e devemos adicionar o a pasta com seu username e os arquivos do exercício dentro.
 Como eu disse anteriormente:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Criei a pasta &lt;code&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.
+  &lt;p&gt;Criei a pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.
 Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será assim a partir do módulo de Angular1.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Para adicioanar os arquivos utilizamos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git add [pasta-do-exercício]
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;pasta-do-exercício]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Em seu fork você deve ter várias &lt;code&gt;class-[número-da-aula]&lt;/code&gt;, no meu caso – repetindo – Criei a pasta &lt;code&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.&lt;/p&gt;
+  &lt;p&gt;Em seu fork você deve ter várias &lt;code class=&quot;highlighter-rouge&quot;&gt;class-[número-da-aula]&lt;/code&gt;, no meu caso – repetindo – Criei a pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Então, simplesmente usei o comando &lt;code&gt;git add class-10&lt;/code&gt; junto com a pasta com meu username dentro. Feito isso você deve fazer o seu commit.&lt;/p&gt;
+&lt;p&gt;Então, simplesmente usei o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git add class-10&lt;/code&gt; junto com a pasta com meu username dentro. Feito isso você deve fazer o seu commit.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;O que é Commit?&lt;/p&gt;
@@ -380,25 +495,29 @@ Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será
 E é isso que o commit faz, Assim essa modificação não fica perdida e todo mundo sabe do que se trata aquela mudança.&lt;/p&gt;
 
 &lt;p&gt;“Commitaremos” com o comando:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git commit -m &quot;Seu Nome - Exercício [número-do-exercício-aqui] - Resolvido&quot;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Seu Nome - Exercício [número-do-exercício-aqui] - Resolvido&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;No meu caso, eu fiz:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git commit -m &quot;Gabriel Kalani - Exercício 10 - Resolvido&quot;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Gabriel Kalani - Exercício 10 - Resolvido&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Após isso, vamos enviar e qual comando utilizamos?&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git push origin master
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push origin master
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Porém, você não vai fazer essa merda, você estará enviando para a branch principal &lt;code&gt;master&lt;/code&gt; e nós queremos enviar para a branch que criamos.&lt;/p&gt;
+&lt;p&gt;Porém, você não vai fazer essa merda, você estará enviando para a branch principal &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; e nós queremos enviar para a branch que criamos.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git push origin patch-10
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push origin patch-10
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;Patch-10&lt;/code&gt; é a branch que eu criei, no seu caso, você pode estar enviando para &lt;code&gt;patch-1&lt;/code&gt;,&lt;code&gt;patch-2&lt;/code&gt;,&lt;code&gt;patch-3&lt;/code&gt; e por aí vai.&lt;/p&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Patch-10&lt;/code&gt; é a branch que eu criei, no seu caso, você pode estar enviando para &lt;code class=&quot;highlighter-rouge&quot;&gt;patch-1&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;patch-2&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;patch-3&lt;/code&gt; e por aí vai.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;No meio desse processo, ele deve pedir seu login e senha do GitHub, na hora da senha, poderá não aparecer nada é normal, só está invisível mas sua senha vai estar lá.&lt;/p&gt;
@@ -424,7 +543,7 @@ Depois que enviar, visite seu fork do módulo em que está e verá que seu commi
 
 &lt;p&gt;Clique e crie seu Pull Request e seja feliz, meu bruxo.&lt;/p&gt;
 
-&lt;p&gt;Aqui funcionou certinho e enviou os 5 arquivos que estavam dentro da pasta com meu &lt;code&gt;class-10&lt;/code&gt; e agora é só esperar o Suissa fazer a correção de seus RESPECTIVOS exercícios.&lt;/p&gt;
+&lt;p&gt;Aqui funcionou certinho e enviou os 5 arquivos que estavam dentro da pasta com meu &lt;code class=&quot;highlighter-rouge&quot;&gt;class-10&lt;/code&gt; e agora é só esperar o Suissa fazer a correção de seus RESPECTIVOS exercícios.&lt;/p&gt;
 
 &lt;p&gt;Vamos finalizar por aqui, se tem alguma dúvida, sugiro que me contate pelo meu facebook, twitter ou algo do tipo. com o id @gkal19
 Também estou no Telegram, nos grupos da Webschool e meu e-mail é gabrielsilva1956@gmail.com&lt;/p&gt;
@@ -442,9 +561,6 @@ Também estou no Telegram, nos grupos da Webschool e meu e-mail é gabrielsilva1
         <title>COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1</title>
         <description>&lt;p&gt;Já pensou em aprender a criar Pull Request’s separados?
 Então, “simbora”!!&lt;/p&gt;
-
-&lt;h2 id=&quot;como-criar-pull-requests-separados---parte-1&quot;&gt;COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;Olá terráqueos,
 Tudo beleuza creuza?&lt;/p&gt;
@@ -469,24 +585,26 @@ Cada vez que você faz um commit ele avança automaticamente.&lt;/p&gt;
 &lt;p&gt;Enfim, vamos lá!
 Suponhamos que você deseja enviar o exercício #10 do módulo de Angular1.
 Para criar uma &lt;strong&gt;branch&lt;/strong&gt; utilizamos o comando:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git branch [insira o nome da branch]
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git branch &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;insira o nome da branch]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;A parte onde está escrita “[insira o nome da branch]” deve ser substituída por &lt;code&gt;patch-[número da aula de seu modulo]&lt;/code&gt; e não deve conter chaves ou espaços.&lt;/p&gt;
+  &lt;p&gt;A parte onde está escrita “[insira o nome da branch]” deve ser substituída por &lt;code class=&quot;highlighter-rouge&quot;&gt;patch-[número da aula de seu modulo]&lt;/code&gt; e não deve conter chaves ou espaços.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Ao checar o terminal, poderá ver que ele estará na branch principal &lt;code&gt;master&lt;/code&gt;, mas para fazer o trocar de branchs, utilizamos:&lt;/p&gt;
+&lt;p&gt;Ao checar o terminal, poderá ver que ele estará na branch principal &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, mas para fazer o trocar de branchs, utilizamos:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git branch [nome da sua branch]
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git branch &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;nome da sua branch]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;E quando você for ver, ele já terá feito a “transação” para o outro Ramo.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oKjBTvM.png&quot; alt=&quot;trocando a branch&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;O próximo passo será adicionar o seu exercício, como irei enviar o exercício #10 de Angular, terei eu de adicionar a class-10 – já que eu sou o único que está na frente em exercícios de Angular.
-Criei a pasta &lt;code&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.&lt;/p&gt;
+Criei a pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será assim a partir do módulo de Angular1.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -507,9 +625,6 @@ Criei a pasta &lt;code&gt;class-10&lt;/code&gt; e nela criei mais uma pasta com 
       <item>
         <title>COISAS CANSATIVAS</title>
         <description>&lt;p&gt;Ultimamente, to me sentindo meio cansado e vou explicar porquê.&lt;/p&gt;
-
-&lt;h2 id=&quot;coisas-cansativas&quot;&gt;COISAS CANSATIVAS&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;Bom, agora são 05:00 no dia 12.06.
 Dia dos Namorados, dia de ver seus amigos lamentando, chorando, resmungando, namorando e tudo mais. Eu como 6 anos seguidos, terei de ficar sozinho nos dias dos namorados, mas não é um problema seria pior ficar sozinho no mundo.&lt;/p&gt;
@@ -535,9 +650,6 @@ Fiz os exercícios 06, 07, 08, 09 e 10, sério na moral isso cansa demais.&lt;/p
       <item>
         <title>MUDANÇAS CONSTANTES</title>
         <description>&lt;p&gt;Nos últimos minutos/horas o blog está passando por diversas mudanças.&lt;/p&gt;
-
-&lt;h2 id=&quot;mudanÇas-constantes&quot;&gt;MUDANÇAS CONSTANTES&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;O blog nos últimos tempos rsrsrs acho engraçado dizer isso.&lt;/p&gt;
 
@@ -572,12 +684,9 @@ Fiz os exercícios 06, 07, 08, 09 e 10, sério na moral isso cansa demais.&lt;/p
         <title>SEM IDEIAS</title>
         <description>&lt;p&gt;Acho que estou ficando meio que sem ideias do que postar no meu blog, mas já tenho uma ideia&lt;/p&gt;
 
-&lt;h2 id=&quot;sem-ideias&quot;&gt;SEM IDEIAS&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Bom, acabei de criar este blog e to sem ideias do que postar, então vou recomendar alguns &lt;code&gt;links&lt;/code&gt; para quem deseja aprender algumas linguagens.
+&lt;p&gt;Bom, acabei de criar este blog e to sem ideias do que postar, então vou recomendar alguns &lt;code class=&quot;highlighter-rouge&quot;&gt;links&lt;/code&gt; para quem deseja aprender algumas linguagens.
 &lt;br /&gt;
-Acabei de ter uma conversa com o &lt;a href=&quot;https://www.github.com/ridjohansen&quot;&gt;Richard D. Johansen&lt;/a&gt; para me ajudar me dando &lt;code&gt;links&lt;/code&gt; para aprender React.JS e o cara me surpreendeu ao me recomendar o perfil de dois usuários.
+Acabei de ter uma conversa com o &lt;a href=&quot;https://www.github.com/ridjohansen&quot;&gt;Richard D. Johansen&lt;/a&gt; para me ajudar me dando &lt;code class=&quot;highlighter-rouge&quot;&gt;links&lt;/code&gt; para aprender React.JS e o cara me surpreendeu ao me recomendar o perfil de dois usuários.
 &lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.github.com/raphamorim&quot;&gt;Raphael Amorim&lt;/a&gt; e o&lt;/li&gt;
@@ -613,9 +722,6 @@ Abração =D&lt;/p&gt;
       <item>
         <title>NOVO BLOG</title>
         <description>&lt;p&gt;Parece que tem um novo blog nascido.&lt;/p&gt;
-
-&lt;h2 id=&quot;novo-blog&quot;&gt;NOVO BLOG&lt;/h2&gt;
-&lt;hr /&gt;
 
 &lt;p&gt;Então, este aqui é meu primeiro blog. Mentira é o “sei-lá-qual-número” já que criei vários na época em que o Blogger da Google era bastante utilizado e mais dois blogs com o Wordpress.&lt;/p&gt;
 

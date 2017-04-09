@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
-    <!-- Customisation  -->
+    <!-- Customização  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,8 +25,8 @@
     <script async src="http://platform.twitter.com/widgets.js"></script>
 <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
-        <a class="back-button icon-arrow-left" href="/">Home</a>
-        <a class="subscribe-button icon-feed" href="feed.xml">FEED</a>
+        <a class="back-button icon-arrow-left" href="/">Início</a>
+        <a class="subscribe-button icon-feed" href="feed.xml">Inscreva-se</a>
     </nav>
 </header>
 
@@ -41,28 +41,13 @@
                 
             </section>
         </header>
-
-<!--         <header class="post-header">
-            <a id="blog-logo" href="http://localhost:4000">
-                
-                    <img src="true" alt="Gabriel Kalani" />
-                
-            </a>
-        </header> -->
-
         <span class="post-meta">
-            <time datetime="2016-07-11">11 Jul 2016</time>
             
         </span>
-
-        <!-- <h1 class="post-title">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2</h1> -->
 
         <section class="post-content">
             <p>Já pensou em aprender a criar Pull Request’s separados?
 Então, “simbora”!!</p>
-
-<h2 id="como-criar-pull-requests-separados---parte-2">COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 2</h2>
-<hr>
 
 <p>Olá terráqueos,
 Tudo beleuza creuza?</p>
@@ -79,23 +64,25 @@ Tudo beleuza creuza?</p>
 
 <p><img src="http://i.imgur.com/oKjBTvM.png" alt="trocando a branch"></p>
 
-<p>No meu caso eu criei <code>patch-10</code> que é a em que exercício eu estou e devemos adicionar o a pasta com seu username e os arquivos do exercício dentro.
+<p>No meu caso eu criei <code class="highlighter-rouge">patch-10</code> que é a em que exercício eu estou e devemos adicionar o a pasta com seu username e os arquivos do exercício dentro.
 Como eu disse anteriormente:</p>
 
 <blockquote>
-  <p>Criei a pasta <code>class-10</code> e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.
+  <p>Criei a pasta <code class="highlighter-rouge">class-10</code> e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.
 Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será assim a partir do módulo de Angular1.</p>
 </blockquote>
 
 <p>Para adicioanar os arquivos utilizamos:</p>
-<pre><code class="language-shell">$ git add [pasta-do-exercício]
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git add <span class="o">[</span>pasta-do-exercício]
 </code></pre>
+</div>
 
 <blockquote>
-  <p>Em seu fork você deve ter várias <code>class-[número-da-aula]</code>, no meu caso – repetindo – Criei a pasta <code>class-10</code> e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.</p>
+  <p>Em seu fork você deve ter várias <code class="highlighter-rouge">class-[número-da-aula]</code>, no meu caso – repetindo – Criei a pasta <code class="highlighter-rouge">class-10</code> e nela criei mais uma pasta com meu username e os arquivos do exercícos dentro.</p>
 </blockquote>
 
-<p>Então, simplesmente usei o comando <code>git add class-10</code> junto com a pasta com meu username dentro. Feito isso você deve fazer o seu commit.</p>
+<p>Então, simplesmente usei o comando <code class="highlighter-rouge">git add class-10</code> junto com a pasta com meu username dentro. Feito isso você deve fazer o seu commit.</p>
 
 <blockquote>
   <p>O que é Commit?</p>
@@ -105,25 +92,33 @@ Essa é a nova “norma” para enviar exercícios no BeMEAN, creio eu que será
 E é isso que o commit faz, Assim essa modificação não fica perdida e todo mundo sabe do que se trata aquela mudança.</p>
 
 <p>“Commitaremos” com o comando:</p>
-<pre><code class="language-shell">$ git commit -m "Seu Nome - Exercício [número-do-exercício-aqui] - Resolvido"
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit -m <span class="s2">"Seu Nome - Exercício [número-do-exercício-aqui] - Resolvido"</span>
 </code></pre>
+</div>
 
 <p>No meu caso, eu fiz:</p>
-<pre><code class="language-shell">$ git commit -m "Gabriel Kalani - Exercício 10 - Resolvido"
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit -m <span class="s2">"Gabriel Kalani - Exercício 10 - Resolvido"</span>
 </code></pre>
+</div>
 
 <p>Após isso, vamos enviar e qual comando utilizamos?</p>
 
-<pre><code class="language-shell">$ git push origin master
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git push origin master
 </code></pre>
+</div>
 
-<p>Porém, você não vai fazer essa merda, você estará enviando para a branch principal <code>master</code> e nós queremos enviar para a branch que criamos.</p>
+<p>Porém, você não vai fazer essa merda, você estará enviando para a branch principal <code class="highlighter-rouge">master</code> e nós queremos enviar para a branch que criamos.</p>
 
-<pre><code class="language-shell">$ git push origin patch-10
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git push origin patch-10
 </code></pre>
+</div>
 
 <blockquote>
-  <p><code>Patch-10</code> é a branch que eu criei, no seu caso, você pode estar enviando para <code>patch-1</code>,<code>patch-2</code>,<code>patch-3</code> e por aí vai.</p>
+  <p><code class="highlighter-rouge">Patch-10</code> é a branch que eu criei, no seu caso, você pode estar enviando para <code class="highlighter-rouge">patch-1</code>,<code class="highlighter-rouge">patch-2</code>,<code class="highlighter-rouge">patch-3</code> e por aí vai.</p>
 </blockquote>
 
 <p>No meio desse processo, ele deve pedir seu login e senha do GitHub, na hora da senha, poderá não aparecer nada é normal, só está invisível mas sua senha vai estar lá.</p>
@@ -149,7 +144,7 @@ Depois que enviar, visite seu fork do módulo em que está e verá que seu commi
 
 <p>Clique e crie seu Pull Request e seja feliz, meu bruxo.</p>
 
-<p>Aqui funcionou certinho e enviou os 5 arquivos que estavam dentro da pasta com meu <code>class-10</code> e agora é só esperar o Suissa fazer a correção de seus RESPECTIVOS exercícios.</p>
+<p>Aqui funcionou certinho e enviou os 5 arquivos que estavam dentro da pasta com meu <code class="highlighter-rouge">class-10</code> e agora é só esperar o Suissa fazer a correção de seus RESPECTIVOS exercícios.</p>
 
 <p>Vamos finalizar por aqui, se tem alguma dúvida, sugiro que me contate pelo meu facebook, twitter ou algo do tipo. com o id @gkal19
 Também estou no Telegram, nos grupos da Webschool e meu e-mail é gabrielsilva1956@gmail.com</p>
@@ -182,25 +177,33 @@ Também estou no Telegram, nos grupos da Webschool e meu e-mail é gabrielsilva1
             
 
             <!-- Share links section -->
-            <section class="share">
-    <h4>Compartilhe, por favor!!</h4>
+                <!-- ÁREA DOS BOTÕES "COMPARTILHE" -->
+<section class="share">
+    <h4>Compartilhe este post</h4>
+    <!-- "Compartilhe" no Twitter -->
     <a class="icon-twitter" href="http://twitter.com/share?text=COMO%20CRIAR%20PULL%20REQUESTS%20SEPARADOS%20-%20PARTE%202&amp;url=http://gkal19.github.io//2016/07/11/pull-request-separados-2.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <span class="hidden">Twitter</span>
     </a>
+    <!-- "Compartilhe" no Facebook -->
     <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gkal19.github.io//2016/07/11/pull-request-separados-2.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <span class="hidden">Facebook</span>
     </a>
+    <!-- "Compartilhe" no Google+ -->
     <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gkal19.github.io//2016/07/11/pull-request-separados-2.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <span class="hidden">Google+</span>
     </a>
 
+    <!-- ÁREA DOS BOTÕES "ME SIGA" -->
         <h4>Me siga</h4>
+    <!-- "Me siga" no Twiter -->    
     <a class="icon-twitter" href="http://twitter.com/gkal19" target="_blank">
         <span class="hidden">Twitter</span>
     </a>
+    <!-- "Me siga" no Facebook -->
     <a class="icon-facebook" href="http://facebook.com/gkal19" target="_blank">
         <span class="hidden">Facebook</span>
     </a>
+    <!-- "Me siga" no Github -->
     <a class="fa fa-github" href="http://github.com/gkal19" width="20" height="20" target="_blank">
         <span class="hidden">GitHub</span>
     </a>
@@ -230,10 +233,10 @@ Também estou no Telegram, nos grupos da Webschool e meu e-mail é gabrielsilva1
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
     
-    <!-- Twitter Widget -->
+    <!-- Widget do Twitter -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 
-    <!-- Google Analytics Tracking code -->
+    <!-- Código de rastreamento do Google Analytics -->
     <script type="text/javascript">
 
       var _gaq = _gaq || [];

@@ -19,7 +19,9 @@ about: 'about.html'
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Sobre mim </a> {% endif %}
+                {% if page.about %}
+                <!-- Redireciona para a página "Sobre mim" -->
+                <a href='{{ site.baseurl }}{{ page.about }}'> Sobre mim </a> {% endif %}
              </h2>
         </div>
     </div>
@@ -45,7 +47,6 @@ about: 'about.html'
         </section>
         <footer class="post-meta">
             {% if site.author %}
-                <!--<img class="author-thumb" src="https://avatars0.githubusercontent.com/u/11067705?v=3&s=460" alt="SOU EU CARALEO" nopin="nopin" />-->
                 <img class="author-thumb" src="{{ site.author-image }}" alt="{{ site.author-image-alt }}" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
