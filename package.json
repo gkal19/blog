@@ -1,0 +1,20 @@
+{
+  "name": "gkal19.github.io",
+  "version": "1.0.0",
+  "description": "All my files what i am using on my blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkal19/gkal19.github.io.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Kalani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkal19/gkal19.github.io/issues"
+  },
+  "homepage": "https://github.com/gkal19/gkal19.github.io#readme"
+}
