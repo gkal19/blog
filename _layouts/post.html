@@ -68,14 +68,15 @@ post_class: post-template
                     <br>
                     <br>
                 </section>
+                <br>
             {% endif %}
 
             <!-- Share links section -->
             {% include share.html %}
-
+            <!-- Disqus comments -->
+            {% include disqus.html %}
             <!-- Disqus comments -->
             {% if page.disqus %}
-                {% include disqus.html %}
             {% endif %}
 
         </footer>
