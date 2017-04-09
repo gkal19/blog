@@ -6,8 +6,7 @@ author: Gabriel Kalani
 
 Nos últimos minutos/horas o blog está passando por diversas mudanças.
 
-## MUDANÇAS CONSTANTES
------
+
 
 O blog nos últimos tempos rsrsrs acho engraçado dizer isso.
 

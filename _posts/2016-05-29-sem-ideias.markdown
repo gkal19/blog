@@ -6,8 +6,6 @@ author: Gabriel Kalani
 
 Acho que estou ficando meio que sem ideias do que postar no meu blog, mas já tenho uma ideia
 
-## SEM IDEIAS
------
 
 Bom, acabei de criar este blog e to sem ideias do que postar, então vou recomendar alguns `links` para quem deseja aprender algumas linguagens.
 <br>

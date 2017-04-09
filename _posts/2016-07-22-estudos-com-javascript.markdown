@@ -7,8 +7,7 @@ author: Gabriel Kalani
 Pois é, pelo título que já devem ter visto, eu decidi me abrir (tafuck mano) com vocês e contar para vocês como foi entrar para o "mundo" do JavaScript.
 Então, "simbora"!!
 
-## ESTUDOS COM JAVASCRIPT
------
+
 
 Olá terráqueos,
 Tudo beleuza creuza?

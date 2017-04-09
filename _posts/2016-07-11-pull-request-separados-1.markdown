@@ -7,8 +7,7 @@ author: Gabriel Kalani
 Já pensou em aprender a criar Pull Request's separados?
 Então, "simbora"!!
 
-## COMO CRIAR PULL REQUESTS SEPARADOS - PARTE 1
------
+
 
 Olá terráqueos,
 Tudo beleuza creuza?

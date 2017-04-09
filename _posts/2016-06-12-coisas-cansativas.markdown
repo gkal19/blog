@@ -6,8 +6,7 @@ author: Gabriel Kalani
 
 Ultimamente, to me sentindo meio cansado e vou explicar porquê.
 
-## COISAS CANSATIVAS
------
+
 
 Bom, agora são 05:00 no dia 12.06.
 Dia dos Namorados, dia de ver seus amigos lamentando, chorando, resmungando, namorando e tudo mais. Eu como 6 anos seguidos, terei de ficar sozinho nos dias dos namorados, mas não é um problema seria pior ficar sozinho no mundo.

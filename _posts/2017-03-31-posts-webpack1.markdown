@@ -6,8 +6,7 @@ author: Gabriel Kalani
 
 É de comer?
 
-## UM POUCO SOBRE WEBPACK - PARTE 1/?
------
+
 
 Opaaaa, E aí? como você estão?
 Faz muito tempo que não posto nada aqui, mas eu ví que quase ninguém olha meus posts :broken_heart: 

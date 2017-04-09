@@ -7,8 +7,7 @@ author: Gabriel Kalani
 Pois é, vou ensinar aos interessados como instalar o Kali Linux em um Pendrive
 Então, "simbora"!!
 
-## USANDO KALI NO PENDRIVE
------
+
 
 Olá terráqueos,
 Tudo beleuza creuza?
