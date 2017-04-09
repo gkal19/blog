@@ -7,8 +7,6 @@ author: Gabriel Kalani
 Já pensou em aprender a criar Pull Request's separados?
 Então, "simbora"!!
 
-
-
 Olá terráqueos,
 Tudo beleuza creuza?
 

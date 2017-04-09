@@ -6,8 +6,6 @@ author: Gabriel Kalani
 
 É de comer?
 
-
-
 Opaaaa, E aí? como você estão?
 Faz muito tempo que não posto nada aqui, mas eu ví que quase ninguém olha meus posts :broken_heart: 
 Mas eu posto assim do mesmo jeito :kissing_heart:

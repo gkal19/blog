@@ -6,7 +6,6 @@ author: Gabriel Kalani
 
 Acho que estou ficando meio que sem ideias do que postar no meu blog, mas já tenho uma ideia
 
-
 Bom, acabei de criar este blog e to sem ideias do que postar, então vou recomendar alguns `links` para quem deseja aprender algumas linguagens.
 <br>
 Acabei de ter uma conversa com o [Richard D. Johansen](https://www.github.com/ridjohansen) para me ajudar me dando `links` para aprender React.JS e o cara me surpreendeu ao me recomendar o perfil de dois usuários.
