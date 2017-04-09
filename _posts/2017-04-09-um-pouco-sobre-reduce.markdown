@@ -4,7 +4,10 @@ title: UM POUCO SOBRE REDUCE
 author: Gabriel Kalani
 ---
 
-O `reduce` assim como o `map` e `filter` é uma função super-importante para a Programação Funcional em JavaScript.
+O `reduce` assim como o `map` e `filter` é uma função super-importante para a Programação Funcional em JavaScript. Ele pode ser usado para encontrar um valor cumulativo ou concatenado com base em elementos de todo o ``array``.
+
+## NOVO BLOG
+-----
 
 Olá terráqueos,
 Tudo beleuza creuza?
