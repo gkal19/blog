@@ -15,6 +15,7 @@ Atualmente programo em Python, Go e outras linguagens do Back-End.
 Para alguns que me conhecem de outros carnavais, sabem que eu me aventurava muito mais com o Front-End. Mas eu resolvi partir pro Back-End. Já que me chamou bastante atenção, mas ainda pretendo saber sobre HTML para me ajudar em certos momentos.
 
 Procuro estudar bastante e aprender muito para melhorar meu desenvolvimento como profissional e sou uma pessoa bastante humorada e com um bom convívio interpessoal em alguns casos.
+Tudo o que sei sobre JavaScript tenho que agradecer ao meu professor [suissa](https://github.com/suissa) e também devo agradecer ao [Raphael Amorim](https://github.com/raphamorim) por fazer despertar meu interesse pela linguagem Python.
 
 ## Contate-me
 
