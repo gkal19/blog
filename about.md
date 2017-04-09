@@ -7,11 +7,19 @@ Bem o que posso dizer sobre mim?
 
 Bom em um belo dia, meus pais se conheceram... Não pera aí rsrs
 
-Comecei a amar programação aos meus 8 anos de idade, comecei com C++ e depois parti para o ObjC com uma máquina virtual que havia criado.
-Em Outubro de 2014 comecei a "trabalhar" com edição de vídeos atendendo as necessidades dos Criadores de Conteúdo do YouTube. Até hoje pego uns trabalhos pequenos como editor. (Caso precise de um, "oia" eu aqui.
+Entrei no mundo da programação aos meus 8 anos de idade, a primeira linguagem no qual eu tive contato foi o C++ e depois partindo para o Objective-C.
+Atualmente programo em Python, Go e outras linguagens do Back-End.
 
-Em Maio: fiz um curso pequeno de JavaScript e comecei a procurar apostilas e cursos no "Gugou" e até que achei os cursos do [Suissa](https://github.com/suissa) da Webschool e também do BeMEAN. E to quase me tornando um Full-Stack em JS, sendo que só falta o "full". Tenho a agradecer a todos que me ajudaram nessa caminhada até aqui, meu amigo [Mateus Sobrinho](https://github.com/chocsx), meu professor [Suissa](https://github.com/suissa), o carinha dos Open-Source e CSS [Afonso Pacifer](https://github.com/afonsopacifer) e mais uma galera que depois eu vou lembrar.
+É isso mesmo. B A C K - E N D :heart:
+
+Para alguns que me conhecem de outros carnavais, sabem que eu me aventurava muito mais com o Front-End. Mas eu resolvi partir pro Back-End. Já que me chamou bastante atenção, mas ainda pretendo saber sobre HTML para me ajudar em certos momentos.
+
+Procuro estudar bastante e aprender muito para melhorar meu desenvolvimento como profissional e sou uma pessoa bastante humorada e com um bom convívio interpessoal em alguns casos.
 
 ## Contate-me
 
-[Meu e-mail](mailto:gabrielsilva1956@gmail.com)
+[e-mail](mailto:gabrielsilva1956@gmail.com)
+[Telegram](https://t.me/ogabriel)
+[Twitter](https://twitter.com/gkal19)
+[Facebook](https://facebook.com/gkal19)
+[GitHub](https://github.com/gkal19)
