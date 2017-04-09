@@ -3,7 +3,7 @@ description: Eu sou Gabriel Kalani, o Batman
 meta_description: "Eu sou Gabriel Kalani, o Batman"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: true
 paginate: 15
 baseurl: ''
