@@ -20,7 +20,11 @@ Tudo o que sei sobre JavaScript tenho que agradecer ao meu professor [suissa](ht
 ## Contate-me
 
 [e-mail](mailto:gabrielsilva1956@gmail.com)
+
 [Telegram](https://t.me/ogabriel)
+
 [Twitter](https://twitter.com/gkal19)
+
 [Facebook](https://facebook.com/gkal19)
+
 [GitHub](https://github.com/gkal19)
