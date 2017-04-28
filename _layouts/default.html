@@ -56,5 +56,13 @@
     </script>
     <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
     <script defer async src="https://unpkg.com/realpub@0.0.8">
+    <script>
+    Realpub.init('40599v1j2288gbp').then(function(socket) {
+        socket.on('new event', function() {
+            alert('Yeah! New event received!');
+        })
+    })
+    Realpub.emit('new event')
+</script>
 </body>
 </html>
