@@ -24,7 +24,7 @@ Eu posso dizer que "noobei", pois ele me disse para implementar dois services e 
 Aqui eu contribui com a criação de um README na linguagem Português do Brasil, como também na atualização dos pacotes que estavam no `package.json` e também algumas correções básicas.
 
 - [samverneck/emojis-boladao](https://github.com/samverneck/emojis-boladao) 
-De todos os que eu citei e vou citar, este foi o mais fácil. Com apenas 1 commit, 17 adições, 12 deleções. O repositório do [samverneck](https://github.com/samverneck] se tratava de um Cheatsheet do Emojis para o GitHub. 
+De todos os que eu citei e vou citar, este foi o mais fácil. Com apenas 1 commit, 17 adições, 12 deleções. O repositório do [samverneck](https://github.com/samverneck) se tratava de um Cheatsheet do Emojis para o GitHub. 
 Os erros existentes de tabelas, eu transformei [disso](https://github.com/samverneck/emojis-boladao/blob/354e70a5dddafbcec80bfb74235c11c9d186b503/README.md) para [isso](https://github.com/samverneck/emojis-boladao/blob/a37f0b9638790862156883c01b69c3402cec6469/README.md).
 Foi super simples.
 
