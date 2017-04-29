@@ -32,6 +32,7 @@ Foi super simples.
 O que falar desse aqui? O meu preferido dentre todos. Esse é o projeto do [@raphamorim](https://github.com/raphamorim) que acabamos começando a nos falar pelo Telegram, trocamos algumas ideias e tal.
 > Minimalist Vim Based Editor for the 30th Century
 Ele foi o que me chamou muito mas muita atenção mesmo.
+
 ![RETRO](https://github.com/raphamorim/retro/blob/master/assets/images/example.png?raw=true "RETRO").
 
 Nele eu fiz bastante correção do ECMAScript 6 em alguns arquivos. No final disso, o Rapha pediu para eu restaurar o código original de dois arquivos que não eram pra ser editados e me fez uma pergunta que era mais ou menos um "Por que usar as `arrow functions`?" 
@@ -43,7 +44,8 @@ Rapaz, nesse momento eu fiquei bem tenso. Pois fiquei bastante nervoso de falar 
 Uma bela trollagem :trollface:
 
 Enfim, para este post não ficar tão longo vou deixar o link de alguns Pull Requests que eu trabalhei além destes que estão na lista.
-- [Support for the Brazilian Portuguese language | ES6 fixed in Public/js/app.js](https://github.com/joeblau/gitignore.io/pull/347)
+
+- [Support for the Brazilian Portuguese language & ES6 fixed in Public/js/app.js](https://github.com/joeblau/gitignore.io/pull/347)
 - [.gitignore for minified files](https://github.com/dvcs/gitignore/pull/13)
 - [.gitignore for CSS files](https://github.com/dvcs/gitignore/pull/14)
 - [.gitignore for Travis files & folders](https://github.com/dvcs/gitignore/pull/15)
