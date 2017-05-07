@@ -18,7 +18,7 @@ O mesmo será realizado quando o usuário `sair` do grupo, porém as mensagens s
 Além desses módulos, atualizei alguns arquivos para o ES6 e eu conheci o [@rjmunhoz](https://github.com/rjmunhoz) e estou procurando ajudar ele em uma "transformação" do código atual do BOT para ES6.
 Eu posso dizer que "noobei", pois ele me disse para implementar dois services e eu não sabia onde colocar e daí que isso resultou em 10 commits (8 commits tirando os 3 do Roz :laughing:). Mas no final, tudo deu certo e o Roz deu merge no PR.
 
-![Commit mergeado](http://i.imgur.com/QKRisqC.pngg "Commit mergeado")
+![Commit mergeado](http://i.imgur.com/QKRisqC.png "Commit mergeado")
 
 - [BibleJS/bible-portuguese](https://github.com/BibleJS/bible-portuguese) 
 Aqui eu contribui com a criação de um README na linguagem Português do Brasil, como também na atualização dos pacotes que estavam no `package.json` e também algumas correções básicas.
