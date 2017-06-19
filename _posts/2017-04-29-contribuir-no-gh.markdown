@@ -9,7 +9,7 @@ Nesta postagem, vou falar sobre a importância de contribuir para outros projeto
 Olá terráqueos,
 Tudo beleuza creuza?
 
-Pois é, nos últimos dias estou contribuindo para um ~caralho~ montão de repositórios existentes no GitHub. E isso me ajudou muito, mas muito mesmo.
+Pois é, nos últimos dias estou contribuindo para um ~~caralho~~ montão de repositórios existentes no GitHub. E isso me ajudou muito, mas muito mesmo.
 Vou citar alguns aqui:
 
 - [Webschool-io/Bot-Telegram-BeMEAN](https://github.com/Webschool-io/Bot-Telegram-BeMEAN) 
