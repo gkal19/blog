@@ -45,7 +45,7 @@ Recomendo os canais ou cursos de todos citados acima, todos me ajudaram demais n
 - React.JS
 - SASS
 - Redux
-- PHP
+- ~~PHP~~
 - Ruby/Rails
 - Meteor
 - AWS
