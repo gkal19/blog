@@ -1,7 +1,5 @@
-[![Build Status](https://travis-ci.org/gkal19/gkal19.github.io.svg?branch=master)](https://travis-ci.org/gkal19/gkal19.github.io)
-
-# Gabriel Kalani
+# Gabriel Kalani - gkal19
 
 Source code for my entire blog
 
-Made w/ [Jekyll](https://github.com/jekyll/jekyll)
+Made with [Jekyll](https://github.com/jekyll/jekyll)
