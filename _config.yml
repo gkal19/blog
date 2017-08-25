@@ -1,9 +1,9 @@
 # Título do Blog
 name: Gabriel Kalani
 # Descrição do Blog
-description: Eu sou Gabriel Kalani, o Batman 
+description: Blog de um garoto meio loucão haha
 # Meta-descrição do Blog
-meta_description: "Eu sou Gabriel Kalani, o Batman"
+meta_description: "Eu sou Gabriel Kalani, tenho 16 anos, sou Desenvolvedor Back-End"
 # Biblioteca para análise e conversão de um super conjunto de Markdown.
 markdown: kramdown
 # Highlighter Rouge
@@ -23,7 +23,6 @@ google_analytics: 'UA-30503770-1'
 gems:
   - jemoji
   - jekyll-paginate
-  - jekyll-admin
 group: 
   - jekyll_plugins
 # Configuração da Bio do Autor
