@@ -43,15 +43,6 @@ Rapaz, nesse momento eu fiquei bem tenso. Pois fiquei bastante nervoso de falar 
 
 Uma bela trollagem :trollface:
 
-Enfim, para este post não ficar tão longo vou deixar o link de alguns Pull Requests que eu trabalhei além destes que estão na lista.
-
-- [Support for the Brazilian Portuguese language & ES6 fixed in Public/js/app.js](https://github.com/joeblau/gitignore.io/pull/347)
-- [.gitignore for minified files](https://github.com/dvcs/gitignore/pull/13)
-- [.gitignore for CSS files](https://github.com/dvcs/gitignore/pull/14)
-- [.gitignore for Travis files & folders](https://github.com/dvcs/gitignore/pull/15)
-- [.gitignore for Mule files](https://github.com/dvcs/gitignore/pull/16)
-- [ES6 applied in some files](https://github.com/jekyll/jekyll-admin/pull/342)
-
 Pois bem, o que é contribuir?
 
 > colaborar na execução de algo; cooperar; Auxiliar ou ajudar no desenvolvimento de alguma coisa;
@@ -59,7 +50,7 @@ Pois bem, o que é contribuir?
 Contribuir com os projetos Open-Source - ou qualquer outro tipo - pode te ajudar na prática, mesmo se você for um Estudante ou um profissional em Front-End, Back-End. Se você se identifica com um projeto, causa ou algo do tipo, ajude-o a tornar melhor. 
 Além da prática, isso irá te ajudar a trabalhar melhor em equipe.
 
-Para começar, eu recomendo que você procure um repositório onde você se identifique. Dê um `fork` em seu perfil e clone-o. Execute o programa, veja como ele funciona, procure por bugs, erros de sintaxe ou até mesmo criar novas funcionalidades para esse projeto.
+Para começar, eu recomendo que você procure um repositório onde você se identifique. Dê um `fork` em seu perfil e clone-o em seu computador. Execute o programa, veja como ele funciona, procure por bugs, erros de sintaxe ou até mesmo criar novas funcionalidades para esse projeto.
 
 Agora suponhamos, que você entrou de cara em um projeto foi feito em uma linguagem de programação diferente da sua e você não sabe nada. Eu particularmente, recomendo que você crie uma `Issue`.
 No GitHub, uma `Issue` é onde você pode tirar suas dúvidas, relatar problemas, bugs ou algo do tipo. Se puder levante o máximo de informações possíveis para que os contribuidores ou os idealizadores do projeto identifiquem o problema e solucionem ele por completo. 
