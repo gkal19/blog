@@ -19,7 +19,6 @@
 
     <!-- Código de rastreamento do Google Analytics -->
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
       _gaq.push(['_trackPageview']);
@@ -29,17 +28,9 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
     <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
-    
-    <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
-    <div class="coinhive-miner" 
-        style="width: 256px; height: 310px"
-        data-key="Re1kXV3CyVvPrPu4zbFhryuYQpBx6mFO">
-        <em>Carregando...</em>
-    </div>
-    
+       
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
 
