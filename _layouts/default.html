@@ -9,28 +9,6 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-    <!-- Customização  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-</head>
-<body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-
-    {{ content }}
-
-    <footer class="site-footer clearfix">
-      <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
-              2017 &bull; Todos os direitos reservados.
-      </section>
-      <section class="poweredby">Feito com Jekyll usando 
-        <a href="http://github.com/rosario/kasper">Kasper</a>
-      </section>
-    </footer>
     
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
@@ -54,5 +32,34 @@
 
     </script>
     <script id="dsq-count-scr" src="//gabriel-kalani-blog.disqus.com/count.js" async></script>
+    
+    <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+    <div class="coinhive-miner" 
+        style="width: 256px; height: 310px"
+        data-key="Re1kXV3CyVvPrPu4zbFhryuYQpBx6mFO">
+        <em>Carregando...</em>
+    </div>
+    
+</head>
+<body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
+
+    {{ content }}
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
+              2017 &bull; Todos os direitos reservados.
+      </section>
+      <section class="poweredby">Feito com Jekyll usando 
+        <a href="http://github.com/rosario/kasper">Kasper</a>
+      </section>
+    </footer>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customização  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </body>
 </html>
