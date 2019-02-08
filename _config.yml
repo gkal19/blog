@@ -1,9 +1,9 @@
 # Título do Blog
 name: Gabriel Kalani
 # Descrição do Blog
-description: Blog de um garoto meio loucão haha
+description: Blog 
 # Meta-descrição do Blog
-meta_description: "Eu sou Gabriel Kalani, tenho 16 anos, sou Desenvolvedor Back-End"
+meta_description: "Eu sou Gabriel Kalani. Sempre na sede por conhecimento."
 # Biblioteca para análise e conversão de um super conjunto de Markdown.
 markdown: kramdown
 # Highlighter Rouge
