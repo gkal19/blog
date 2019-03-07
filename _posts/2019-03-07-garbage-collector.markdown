@@ -97,8 +97,8 @@ Você pode fazer isso escolhendo um dos objetos no ciclo e definindo a proprieda
 Sempre se preocupe com isso, para quem desenvolve games usando o HTML5. Isso é bem importante para o player ter uma ótima experiência com seu jogo e seu código cria muitos lixos, você vai ter problemas com isso.
 
 ## Fontes:
-[Gerenciamento de Memória](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Memory_Management#Garbage_collection)
-[Memory Leaks](http://javascript.info/tutorial/memory-leaks)
-[Desmitificando o Garbage Collector](http://www.devmedia.com.br/desmistificando-o-garbage-collector/5451#ixzz3z9bl0BvE)
+- [Gerenciamento de Memória](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Memory_Management#Garbage_collection)
+- [Memory Leaks](http://javascript.info/tutorial/memory-leaks)
+- [Desmitificando o Garbage Collector](http://www.devmedia.com.br/desmistificando-o-garbage-collector/5451#ixzz3z9bl0BvE)
 
 Abração =D
