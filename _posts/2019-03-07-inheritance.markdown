@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NOVO BLOG
+title: INTRODUÇÃO A HERENÇAS NO JAVASCRIPT
 author: Gabriel Kalani
 ---
 
